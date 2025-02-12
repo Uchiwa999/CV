@@ -294,6 +294,17 @@ header p{
     margin-bottom: 35px;
 }
 
+.competences h2{
+    color: white;
+    animation: h1_animation 4s;
+    animation-delay: 0.8s;
+    background-color: #0088D1;
+    border-radius: 3px;
+    height: 4%;
+    width: 100%;
+    justify-content: center;
+}
+
 .competences img{
     width: 65px;
     height: 50px;
@@ -311,6 +322,12 @@ header p{
     animation: text-focus-in 6s;
 }
 
+.link_competences h2{
+    text-align: center;
+}
+.link_competences{
+    width: 80%;
+}
 /********************************
     A propos
 ********************************/
@@ -540,5 +557,5 @@ input{
         display: flex;
         flex-direction: column;
     }
-    .competences{width: 50%;}
+    .competences{width: 75%;}
 }
