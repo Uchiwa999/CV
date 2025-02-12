@@ -1,0 +1,544 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+/***************************
+    HEADER
+****************************/
+body button{
+    display: flex;
+    color: white;
+    width: 150px;
+    height: 50px;
+    background-color: #0088D1;
+    border-radius: 200px;
+    align-items: center;
+    border: 1px #0088D1 solid;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding: 20px;
+    width: 90%;
+    animation: header_animation 2s ;
+    box-shadow: 5px 5px 10px 0px #a2a0a0;
+    border-radius: 10px;
+    background-color: #0088D1;
+    color: white;
+}
+
+header img{
+    background-color: white;
+    border-radius: 10px;
+    animation: wobble-hor-bottom 5s;
+    animation-delay: 0.3;
+}
+
+h1{
+    animation: h1_animation 4s;
+    text-align: center;
+}
+header h2{
+    animation: h1_animation 5s;
+    animation-delay: 0.5ms;
+    text-align: center;
+}
+header p{
+    animation: h1_animation 5s;
+    animation-delay: 0.5ms;
+    text-align: center;
+
+}
+
+
+/**********************************
+    Animation
+**********************************/
+
+@keyframes header_animation{
+    from{
+        margin-left: -3000px;
+    }
+    to{
+        margin-left: 0px;
+    }
+}
+@keyframes  h1_animation {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes  blur_animation {
+    0% {
+        opacity: 0;
+    }
+    40%{
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes content_animation{
+    from{
+        margin-right: -3350px;
+    }
+    to{
+        margin-right: 0px;
+    }
+}
+@keyframes projets_animation{
+    from{
+        margin-left: -3000px;
+    }
+    to{
+        margin-left: 0px;
+    }
+}
+@-webkit-keyframes flip-in-hor-bottom {
+    0% {
+        -webkit-transform: rotateX(80deg);
+        transform: rotateX(80deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes flip-left-to-right {
+    0% {
+        -webkit-transform: rotateY(110deg);
+        transform: rotateY(110deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes wobble-hor-bottom {
+    0%,
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    }
+    15% {
+        -webkit-transform: translateX(-30px) rotate(-6deg);
+        transform: translateX(-30px) rotate(-6deg);
+    }
+    30% {
+        -webkit-transform: translateX(15px) rotate(6deg);
+        transform: translateX(15px) rotate(6deg);
+    }
+    45% {
+        -webkit-transform: translateX(-15px) rotate(-3.6deg);
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+    60% {
+        -webkit-transform: translateX(9px) rotate(2.4deg);
+        transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+        -webkit-transform: translateX(-6px) rotate(-1.2deg);
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+
+/********************************
+    Scoll
+********************************/
+
+@supports (animation-timeline: scroll()){
+    body{
+
+        animation: spin linear both;
+        animation-timeline: scroll();
+    }
+
+}
+
+/**********************************
+    Mes compétences
+**********************************/
+
+@-webkit-keyframes bounce-in-left {
+    0% {
+        -webkit-transform: translateX(-600px);
+        transform: translateX(-600px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    38% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+    55% {
+        -webkit-transform: translateX(-68px);
+        transform: translateX(-68px);
+        -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    }
+    72% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    }
+    81% {
+        -webkit-transform: translateX(-28px);
+        ransform: translateX(-28px);
+        -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    }
+    90% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    }
+    95% {
+        -webkit-transform: translateX(-8px);
+        transform: translateX(-8px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+.competences{
+    /* background: center url(/resources/about.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 15px;
+    padding: 20px; */
+    width: 90%;
+    animation: bounce-in-left 6s ;
+    box-shadow: 5px 5px 10px 0px #a2a0a0;
+    border-radius: 10px;
+    /* overflow: hidden; */
+    /* height: 850px; */
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.competences img{
+    width: 65px;
+    height: 50px;
+}
+.d1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    width: 95%;
+}
+
+.d11{
+    animation: text-focus-in 6s;
+}
+
+/********************************
+    A propos
+********************************/
+.a_propos{
+    /* background: center url(/resources/about.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 15px;
+    padding: 20px; */
+    width: 90%;
+    animation: content_animation 4s ;
+    box-shadow: 5px 5px 10px 0px #a2a0a0;
+    border-radius: 10px;
+    /* overflow: hidden; */
+    /* height: 850px; */
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.a_propos h2{
+    color: white;
+    animation: h1_animation 4s;
+    animation-delay: 0.8s;
+    background-color: #0088D1;
+    border-radius: 3px;
+    height: 4%;
+    width: 100%;
+    justify-content: center;
+}
+
+.a_propos p{
+    margin: 20px;
+    animation: blur_animation 4ms;
+    animation: text-focus-in 5s;
+}
+
+/********************************
+    Cursus
+********************************/
+
+.cursus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: 15px;
+    padding: 20px; */
+    width: 90%;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px 0px #a2a0a0;
+    border-radius: 10px;
+    animation: projets_animation 6s;
+    margin-bottom: 35px;
+}
+.cursus h2{
+    color: white;
+    animation: h1_animation 4s;
+    animation-delay: 0.8s;
+    background-color: #0088D1;
+    border-radius: 3px;
+    height: 4%;
+    width: 100%;
+    justify-content: center;
+}
+
+
+
+
+/***********************************
+    Projets
+************************************/
+.projets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: 15px;
+    padding: 20px; */
+    width: 90%;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px 0px #a2a0a0;
+    border-radius: 10px;
+    animation: projets_animation 6s;
+    animation-timeline: sliding-vertically;
+    margin-bottom: 35px;
+}
+.projets h2{
+    color: white;
+    animation: h1_animation 4s;
+    animation-delay: 0.8s;
+    background-color: #0088D1;
+    border-radius: 3px;
+    height: 4%;
+    width: 100%;
+    justify-content: center;
+}
+.p_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+.projets img{
+    max-height: 50%;
+    max-width: 50%;
+    object-fit: cover;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    animation: flip-in-hor-bottom 13s;
+    animation-delay: 2.5s;
+}
+.p_card img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.p_card h3{
+    padding: 10px;
+}
+
+/**********************************
+    Experiences
+**********************************/    
+
+.experiences{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* margin: 15px;
+    padding: 20px; */
+    width: 90%;
+    /* overflow: hidden; */
+    box-shadow: 5px 5px 10px 0px #a2a0a0;
+    border-radius: 10px;
+    animation: content_animation 8s ;
+    margin-bottom: 35px;
+
+}   
+.experiences h2{
+    color: white;
+    animation: h1_animation 4s;
+    animation-delay: 0.8s;
+    background-color: #0088D1;
+    border-radius: 3px;
+    height: 4%;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.exp_card{
+    margin: 20px;
+}
+
+
+
+/**********************************
+    Footer
+**********************************/ 
+
+footer{
+    width: 100%;
+    margin: 20px;
+}
+.formulaire{
+    background-color: #0088D1;
+    color: white;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    animation: projets_animation 2s;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.42);
+    width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 600px;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#form_btn{
+    width: 40%;
+    min-width: 40%;
+    max-width: 20%;
+}
+
+.formulaire input{
+    border-radius: 5px;
+}
+
+label{
+    margin: 3px;
+    
+}
+input{
+    margin: 3px;
+    
+}
+#inp{
+    max-width: 40%;
+}
+
+
+/**********************************
+    Media queries
+**********************************/ 
+
+@media (max-width:600px) {
+
+    .d1{
+        display: flex;
+        flex-direction: column;
+    }
+    .competences{width: 50%;}
+}
